@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/Styles.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header class="header d-flex w-100">
+      <div class="header-logo">
+        <a href="">
+          <img src="./Images/logo.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right d-flex">
+        <div class="search-icon d-flex">
+          <a href="">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+        <div class="drop-down-menu d-flex">
+          <button class="drop-menu">
+            <!-- Idm : Icon Drop Menu -->
+            <i class="fas fa-bars" id="idm"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider-text d-flex">
+          <h3>Australia</h3>
+          <p>pixle perfect design with awesome contacts</p>
+          <a href="" class="slider-btn">
+            Explore Now <span><i class="fas fa-arrow-down"></i></span>
+          </a>
+        </div>
+      </section>
+      <section class="search-bar d-flex">
+        <h3>Where Whant To Go ?</h3>
+        <form action="" class="search-form d-flex">
+          <input type="text" placeholder="wher to go ?" />
+          <input type="text" placeholder="wher to go ?" />
+          <input type="text" placeholder="wher to go ?" />
+          <button type="submit" class="search-btn">
+            Search
+            <span>
+              <i class="fa fa-arrow-down"></i>
+            </span>
+          </button>
+        </form>
+      </section>
+      <section class="popular">
+        <section class="row popular-hedding">
+          <h3 class="popular-title">Popular Destination</h3>
+          <p class="popular-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quis.
+            Aliquam similique libero non iure.
+          </p>
+        </section>
+        <section class="row popular-container">
+          <article>
+            <img src="./Images/1.png" alt="" />
+            <div class="popualr-img-info">
+              <p>Italy <a href="">07 Places</a></p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Images/2.png" alt="" />
+            <div class="popualr-img-info">
+              <p>Brazel <a href="">03 Places</a></p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Images/3.png" alt="" />
+            <div class="popualr-img-info">
+              <p>America <a href="">10 Places</a></p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Images/4.png" alt="" />
+            <div class="popualr-img-info">
+              <p>Nepal <a href="">02 Places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="./Images/5.png" alt="" />
+            <div class="popualr-img-info">
+              <p>Maldives <a href="">02 Places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="./Images/6.png" alt="" />
+            <div class="popualr-img-info">
+              <p>Maldives <a href="">02 Places</a></p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="newsletter d-flex">
+        <div class="newsletter-container row">
+          <div class="newsletter-text d-flex">
+            <h4>Subscribe Our Newsletter</h4>
+            <p>
+              subscribe NewsLetter To Get Offers And About Places To Discover
+            </p>
+          </div>
+          <div class="mail-form d-flex">
+            <form action="">
+              <input type="email" placeholder="Your Mail" />
+              <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="vedio w-100">
+        <div class="vedio-container d-flex">
+          <h3>Enjoy Vedio</h3>
+          <div class="vedio-btn d-flex">
+            <a href="">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="d-flex">
+      <div class="left-footer">
+        <img class="footer-logo" src="Images/footer_logo.png" alt="" />
+        <ul class="footer-info">
+          <li><a href="">5th flora, 700/D kings road, green</a></li>
+          <li><a href="">lane New York-1782</a></li>
+          <li><a href="">+10 367 826 2567</a></li>
+          <li><a href="">contact@carpenter.com</a></li>
+        </ul>
+      </div>
+      <div class="right-footer">
+        <h3 class="footer-title">popular Destination</h3>
+        <ul class="link">
+          <li><a href="">Indonsia</a></li>
+          <li><a href="">India</a></li>
+          <li><a href="">Franch</a></li>
+          <li><a href="">America</a></li>
+          <li><a href="">Switzerland</a></li>
+          <li><a href="">Canada</a></li>
+          <li><a href="">England</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let DM = document.querySelector(".drop-menu");
+    DM.addEventListener("click", () => {
+      let menu = document.querySelector(".menu");
+      // idm : Icon Drop Menu
+      let idm = document.getElementById("idm");
+      menu.classList.toggle("show-menu");
+      if(menu.classList.contains("show-menu")){
+        idm.className="fas fa-close";
+      }
+      else{
+        idm.className="fas fa-bars"; 
+      }
+
+    });
+  </script>
+</html>
